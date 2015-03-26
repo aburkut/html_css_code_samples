@@ -1,0 +1,50 @@
+.period-surface-select {
+  .surface-selector {
+    li{
+      line-height: 22px;
+    }
+  }
+  .period-date-picker {
+    background: #fff !important;
+    .cal {
+      line-height: 15px;
+    }
+    &:hover {
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        height: 15px;
+        z-index: 9999;
+        background: #fff;
+        width: 100%;
+        top: auto;
+      }
+
+      .cal {
+        display: block;
+        width: 530px;
+        bottom: -295px;
+        right: -2px;
+        position: absolute;
+        top: auto;
+        border: 2px solid $color-green;
+        z-index: 99;
+      }
+    }
+  }
+}
+
+
+.small-radio-surface-select {
+  .surface-selector {
+    > li {
+      height: 74px;
+      line-height: 70px;
+    }
+  }
+}

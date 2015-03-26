@@ -1,0 +1,107 @@
+<form>
+    <div class="client">
+        <div class="client__changePass">
+            <a class="btn btn_light_blue" data-click-event="change-pass:click" role="change-pass-button">{{l10n 'profile.changePassword'}}</a>
+        </div>
+        <div class="client__ico">
+            <img src="/static/images/icons/client__ico.png" alt=""/>
+        </div>
+        <div class="client__info">
+            <div class="client__fio">
+                <span role="firstname"></span>
+                <span role="lastname"></span>
+            </div>
+            <div class="client__company" role="profile_companyName"></div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="client__meta">{{l10n 'profile.email'}}:</div>
+        <div class="row__left">
+            <div class="client__label">
+                <input type="text" name="email">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="client__meta">{{l10n 'profile.contacts'}}:</div>
+        <div class="row">
+          <div class="row__left">
+            <div class="client__title">{{l10n 'profile.firstName'}}:</div>
+            <div class="client__label">
+              <input name="firstname" type="text" class="add-input-field" placeholder="{{l10n 'profile.firstName'}}" role="placeholder-input">
+            </div>
+          </div>
+          <div class="row__right">
+            <div class="client__title">{{l10n 'profile.lastName'}}:</div>
+            <div class="client__label">
+              <input name="lastname" type="text" class="add-input-field" placeholder="{{l10n 'profile.lastName'}}" role="placeholder-input">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row__left">
+            <div class="client__title">{{l10n 'profile.company'}}:</div>
+            <div class="client__label">
+              <input name="profile.companyName" type="text" class="add-input-field" placeholder="{{l10n 'profile.company'}}" role="placeholder-input">
+            </div>
+          </div>
+          <div class="row__right">
+            <div class="client__title">{{l10n 'profile.phone'}}:</div>
+            <div class="client__label">
+              <input name="profile.contactPhone" type="text" class="add-input-field" placeholder="{{l10n 'profile.addPhone'}}" role="placeholder-input">
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="row__left">
+            <div class="client__title">{{l10n 'profile.skype'}}:</div>
+            <div class="client__label">
+              <input name="profile.contactSkype" type="text" class="add-input-field" placeholder="{{l10n 'profile.addSkype'}}" role="placeholder-input">
+            </div>
+          </div>
+          <div class="row__right">
+              <div class="client__title">{{l10n 'profile.icq'}}:</div>
+              <div class="client__label">
+                  <input name="profile.contactIcq" type="text" class="add-input-field" placeholder="{{l10n 'profile.addIcq'}}" role="placeholder-input">
+              </div>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="client__meta">{{l10n 'profile.address'}}:</div>
+            <div class="row__left row__country">
+                <div class="client__title">{{l10n 'profile.country'}}</div>
+                <div class="row__select">
+                    <div class="dropdown select-component country__select unselectable" role="country-select"></div>
+                </div>
+            </div>
+            <div class="row__right row__address">
+                <div class="client__title">{{l10n 'profile.address'}}:</div>
+                <div class="client__label">
+                    <input name="profile.address" type="text" class="add-input-field" placeholder="{{l10n 'profile.addAddress'}}" role="placeholder-input">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="client__meta">{{l10n 'profile.details'}}:</div>
+            <div class="container container-payment">
+                <div class="row__left">
+                    <div class="webmoney__logo"><i class="i-webmoney-logo"></i></div>
+                </div>
+                <div class="row__right">
+                    <div class="client__label client__label_last">
+                        <input name="profile.walletAccount" type="text" webmoney-purse="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="user__button">
+            <button role="cancel-button" class="reset btn"><i class="octoicon-cross"></i> {{l10n 'profile.cancel'}}</button>
+            <button role="submit-button" class="apply btn btn_primary"><i class="octoicon-ok-sign"></i> {{l10n 'profile.apply'}}</button>
+        </div>
+</form>

@@ -1,0 +1,19 @@
+<a class="country__label" role="select">
+  <span role="title">{{l10n 'profile.chooseCountry'}}</span>
+  <span class="caret"></span>
+</a>
+
+<div role="country-select-wrapper" class="country-select-wrapper">
+
+    <div class="subnav country-subnav" role="dropdown">
+        {{#each options}}
+        <div class="subnav-item" data-name="{{this.code}}" role="select-item"><a>{{this.name}}</a></div>
+        {{/each}}
+    </div>
+
+    <div class="scroller__bar-wrapper">
+        <div class="scroller__bar" role="country-select-scroller-bar"></div>
+    </div>
+
+</div>
+

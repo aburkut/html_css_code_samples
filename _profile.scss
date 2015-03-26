@@ -1,0 +1,181 @@
+// PROFILE
+
+// Client
+
+.client {
+  @extend %clr;
+
+  .client__ico {
+    float: left;
+    margin: 0 20px 20px 0;
+    display: block;
+    background: #edf3f5;
+    color: #bad1d9;
+    border: 1px solid #bad1d9;
+    @include border-radius(6px);
+    width: 58px;
+    height: 58px;
+
+    img {
+      @include border-radius(6px);
+    }
+
+  }
+
+  .client__info {
+    margin-left: 75px;
+    font-family: $font-semibold;
+
+    a {
+      color: $font-color;
+      text-decoration: none;
+    }
+  }
+
+  .client__fio {
+    margin: 0;
+    font-size: 26px;
+  }
+
+  .client__company {
+    font-size: 18px;
+  }
+
+  .client__changePass {
+    float: right;
+    margin: 20px 0 0;
+
+    .btn {
+      font-size: 12px;
+    }
+  }
+
+  .client__logout {
+    float: right;
+    margin-top: 10px;
+  }
+
+
+
+}
+
+.client__meta {
+  font-size: 14px;
+  font-family: $font-bold;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #edf3f5;
+}
+
+
+.client__title,
+.client__label {
+  margin-bottom: 10px;
+}
+
+.client__label_last {
+  margin-bottom: 0;
+}
+
+.client__label_error {
+  position: relative;
+  margin-bottom: 6px;
+
+  .msg-error {
+    display: block;
+  }
+
+  input {
+    @include border-bottom-left-radius(0);
+    @include border-bottom-right-radius(0);
+    padding-bottom: 7px;
+  }
+}
+
+.row {
+  margin-bottom: 15px;
+  @extend %clr;
+
+  & > .row {
+    margin: 0;
+  }
+}
+
+.row__left {
+  display: block;
+  float: left;
+  width: 50%;
+
+  .client__label {
+    margin-right: 10px;
+  }
+
+}
+
+.row__right {
+  display: block;
+  float: right;
+  width: 50%;
+
+  .client__label,
+  .client__title {
+    margin-left: 10px;
+  }
+
+}
+
+.row__country {
+  width: 200px;
+  margin-right: 10px;
+}
+
+.row__address {
+  width: auto;
+  float: none;
+  overflow: hidden;
+}
+
+.user__button {
+  @extend %clr;
+
+  .reset {
+    position: absolute;
+  }
+
+  .apply {
+    float: right;
+  }
+}
+
+.container-payment {
+  border: 1px solid #dae3e6;
+  margin: 20px 0 10px;
+}
+
+.change-password-popup {
+  .control-group {
+    position: relative;
+    .msg-error {
+      z-index: 10;
+    }
+  }
+}
+
+
+.country__select {
+  height: 31px;
+  .country__label {
+    padding-left: 6px;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 8px;
+  }
+
+  &.is-open {
+    .subnav {
+      top: auto !important
+    }
+  }
+}

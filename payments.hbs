@@ -1,0 +1,32 @@
+<div class="balance__top">
+  <div class="balance__button">
+    <a class="btn btn_light_blue" role="recharge-button" data-click-event='recharge:click'>{{l10n 'common.recharge'}}</a>
+    <a class="btn btn_light_blue" role="cash-out-button" data-click-event='cash_out:click'>{{l10n 'common.cashout'}}</a>
+  </div>
+  <div class="balance__money">
+    <span class="bal">{{l10n 'profile.balance'}}:</span>
+    <span class="numb">
+      {{formatPrice balance}}<i class="octoicon-ruble-sign"></i>
+    </span>
+  </div>
+</div>
+
+<div class="balance__operation">
+  <div class="dropdown select-component balance__select unselectable" role='filter'>
+    <a class="balance__label">
+      <span role="title">{{l10n 'profile.payments.operationTypes.all'}}</span>
+      <span class="caret"></span>
+    </a>
+    <ul class="subnav" role="dropdown">
+      <li data-name="input"><a>{{l10n 'profile.payments.operationTypes.input'}}</a></li>
+      <li data-name="output"><a>{{l10n 'profile.payments.operationTypes.output'}}</a></li>
+      <li style="display: none" data-name="all"><a>{{l10n 'profile.payments.operationTypes.all'}}</a></li>
+    </ul>
+  </div>
+
+</div>
+<div role='payments-list'></div>
+<a role='add-more-items' class="btn btn_light_blue btn_sidebar hidden add-more-items">
+  <i class="octoicon-octowheel animate-spin hidden" role="loader"></i>
+  {{l10n 'profile.showMore'}}
+</a>
